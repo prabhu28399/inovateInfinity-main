@@ -1,0 +1,72 @@
+<!-- <div id="main">
+    <div id="left"></div>
+    <div id="right">
+        <div id="right">
+            <div class="container">
+                <form action="#" method="post" [formGroup]="loginForm">
+                    <h2>Login</h2>
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required  [formControl]="email">
+                    <h5 class="red-txt" [hidden]="email.valid || email.untouched">Ente a correct email</h5>
+                    <label for="password">Password*:</label>
+                    <input type="password" id="password" name="password" required [formControl]="password">
+                    <h5 class="red-txt" [hidden]="password.valid || password.untouched">password is required and must be greater than 6 </h5>
+        
+                    <button type="submit" [disabled]="loginForm.invalid" (click)="login()">Log In</button>
+                </form>
+                <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+            </div>
+    
+    </div>
+</div> -->
+<br /><br />
+<div class="container pt-3">
+  <div>
+    <mat-card>
+      <mat-card-title style="text-align: center"> Login </mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="loginUserForm" (ngSubmit)="OnSubmit()">
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width: 100%">
+                <label>Email id</label>
+                <input
+                  matInput
+                  type="email"
+                  placeholder="email id"
+                  required
+                  formControlName="email"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width: 100%">
+                <label>Password</label>
+                <input
+                  matInput
+                  type="password"
+                  placeholder="email id"
+                  required
+                  formControlName="password"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <button
+              mat-raised-button
+              color="primary"
+              style="width: 100%"
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

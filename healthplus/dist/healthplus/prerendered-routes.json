@@ -1,0 +1,27 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/appointment",
+    "/contact",
+    "/dashboard",
+    "/doctor",
+    "/dr-bhupathi",
+    "/dr-col",
+    "/dr-jaswinder",
+    "/dr-karthik-pingle",
+    "/dr-nalini",
+    "/dr-naveen",
+    "/dr-pranathi",
+    "/dr-pvijay",
+    "/dr-rahul",
+    "/dr-revanth",
+    "/dr-sasidhar",
+    "/dr-srinivas",
+    "/dr-srinivasa",
+    "/dr-victor-vinod-babu",
+    "/helpline",
+    "/login",
+    "/signup"
+  ]
+}

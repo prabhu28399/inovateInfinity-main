@@ -1,0 +1,118 @@
+<!-- <div id="main">
+    <div id="left"></div>
+    <div id="right">
+        <div class="container">
+            <form action="#" method="post">
+                <h2>Sign Up</h2>
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" required>
+    
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Password*:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="confirmPassword">Confirm Password*:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+    
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a routerLink="/login">Log In</a></p>
+        </div>
+    </div>
+</div> -->
+<br /><br /><br /><br /><br /><br /><br />
+<div class="container">
+  <mat-card>
+    <mat-card-title style="text-align: center">SignUp</mat-card-title>
+
+    <form
+      action=""
+      class="example-from"
+      [formGroup]="UserRegistrationForm"
+      (ngSubmit)="OnSubmit()"
+    >
+      <div class="row">
+        <div class="col-6">
+          <br /><br /><br /><br /><br />
+          <mat-form-field class="example-full-width" style="width: 100%">
+            <label>UserName</label>
+            <input
+              matInput
+              type="text"
+              placeholder="UserName"
+              required
+              formControlName="username"
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+          <mat-form-field class="example-full-width" style="width: 100%">
+            <label>Email id</label>
+            <input
+              matInput
+              type="email"
+              placeholder="email id"
+              required
+              formControlName="email"
+            />
+          </mat-form-field>
+        </div>
+        <!-- <div class="col-6">
+          <mat-form-field class="example-full-width">
+            <label>Date of Birth</label>
+            <input matInput [matDatepicker]="picker" />
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <button mat-raised-button (click)="picker.open()">Calender</button>
+        </div> -->
+        <div class="row">
+          <div class="col-6">
+            <mat-form-field class="example-full-width" style="width: 100%">
+              <label>Password</label>
+              <input
+                matInput
+                placeholder="Password"
+                type="password"
+                required
+                formControlName="password"
+              />
+            </mat-form-field>
+          </div>
+          <div class="col-6">
+            <mat-form-field class="example-full-width" style="width: 100%">
+              <label>Confirm Password</label>
+              <input
+                #confirmedPassword
+                matInput
+                placeholder="Password"
+                type="text"
+                required
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <button
+              mat-raised-button
+              color="primary"
+              style="width: 100%"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+          <div class="col-6">
+            <button mat-raised placeholder="warn" style="width: 100%">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <p>Already have an account? <a routerLink="/login">Log In</a></p>
+  </mat-card>
+</div>
